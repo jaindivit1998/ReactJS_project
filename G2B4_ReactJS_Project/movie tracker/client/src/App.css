@@ -1,0 +1,236 @@
+* {
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Home Page */
+.App-header {
+  background-color: #222;
+  padding: 5px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: gray;
+}
+
+.navbar a.active {
+  font-weight: bold;
+  color: red;
+}
+
+/* Movie List Page */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin: 30px;
+}
+
+.movie-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.poster {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  min-height: 200px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+  text-decoration: none;
+  height: 50px;
+}
+
+.title:hover {
+  font-size: 25px;
+}
+
+.rating-favorites {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.rating {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.favorite-button {
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.favorite {
+  color: red;
+}
+
+/* Movie Details */
+.movie-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.movie-details {
+  position: relative; /* Added */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+}
+
+.movie-details-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.movie-details-poster {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  height: 200px;
+}
+
+.movie-details-info {
+  margin-bottom: 10px;
+}
+
+.movie-details-info label {
+  font-weight: bold;
+}
+
+.movie-details-info span {
+  margin-left: 5px;
+}
+
+.movie-details-storyline {
+  font-style: italic;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.movie-details-storyline label {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  background-color: gray;
+  color: white;
+}
